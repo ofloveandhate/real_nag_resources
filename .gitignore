@@ -261,3 +261,9 @@ start
 isApproxSoln
 refinedPoints
 summary
+
+
+paths/
+bfiles*/
+*.mat
+output_*/
