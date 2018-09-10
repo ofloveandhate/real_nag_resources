@@ -240,3 +240,17 @@ TSWLatexianTemp*
 
 # generated if using elsarticle.cls
 *.spl
+
+
+singular_solutions
+finite_solutions
+infinite_solutions
+raw_solutions
+midpath_data
+raw_data
+output
+
+nonsingular_solutions
+real_finite_solutions
+main_data
+failed_paths
