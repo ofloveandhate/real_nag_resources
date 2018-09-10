@@ -1,0 +1,12 @@
+%input for plotting the plane curve
+CONFIG
+tracktype: 1;
+
+END;
+INPUT
+function f1;
+variable_group x,y;
+
+f1 = x^4 + y^4 - (x - y)^2 * (x + y);
+
+END;

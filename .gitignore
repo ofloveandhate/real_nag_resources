@@ -254,3 +254,10 @@ nonsingular_solutions
 real_finite_solutions
 main_data
 failed_paths
+approxSolns
+nonsolutions
+constantValues
+start
+isApproxSoln
+refinedPoints
+summary

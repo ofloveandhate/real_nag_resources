@@ -1,0 +1,40 @@
+%step2 for computing a real point on every connected component of the butterfly curve (there's one)
+
+CONFIG
+userhomotopy: 2;
+END;
+
+INPUT
+
+function f1,aux1,aux2,patch;
+variable_group x,y;
+variable_group ell0,ell1;
+constant eps;
+eps = 0.4671625376172051624+I*-0.971940829780146945;
+pathvariable s;
+parameter t;
+t=s;
+
+f1 = x^4 + y^4 - (x - y)^2 * (x + y) - t*eps;
+
+%the random point not on the curve (variety)
+constant ax, ay;
+ax = 0.46123969587120946;
+ay = 1.71326418926459871234;
+
+
+dfdx = 4*x^3 - (2*x - 2*y)*(x + y) - (x - y)^2;
+dfdy = (2*x - 2*y)*(x + y) - (x - y)^2 + 4*y^3;
+
+aux1 = ell0*(x-ax) + ell1*dfdx;
+aux2 = ell0*(y-ay) + ell1*dfdy;
+
+%patch on the lambdas so as to not get the zero vector (and also to make it square)
+constant p0,p1;
+p0 = -1.2361290875871+0.91982364614*I;
+p1 = 0.7481236584901273478+0.312937160548712347*I;
+
+patch = p0*ell0+p1*ell1-1;
+
+
+END;
