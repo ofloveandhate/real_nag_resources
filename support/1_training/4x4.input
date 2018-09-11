@@ -1,0 +1,15 @@
+
+
+
+variable_group w, x, y, z;
+
+function f1, f2, f3, f4;
+
+constant phi;
+
+phi=(5^(1/2)+1)/2; % use a constant to reduce computation
+
+f1 = (x^2+y^2)^3-4*x^2*y^2*(z^2+1); %eistute
+f2 = x^4-2.5*x^2*y^3 -x*z^3 +y^6 -y^2*z^3; %seepferdchen
+f3 = 4*(phi^2*x^2-y^2)*(phi^2*y^2-z^2)*(phi^2*z^2-x^2) - (1+2*phi)*(x^2+y^2+z^2-w^2)^2*w^2; %barth
+f4 = w-1;

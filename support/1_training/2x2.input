@@ -1,0 +1,14 @@
+CONFIG
+
+END;
+
+INPUT
+
+variable_group x,y;
+function f,g;
+
+f = x^3 + x*y - 3*y ;
+g = x*y - 3*x^5 + 2^(1/2);
+
+
+END;
